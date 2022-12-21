@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+    body{
+        background-image: url(https://source.unsplash.com/1600x908/?movies);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        backdrop-filter: blur(7px);
+    }
+    .searchbox{
+        margin: auto;
+        width: 30%;
+    }
+
+</style>
+
+<div class="container">
+    <div class="searchbox my-5">
+        <form action="" method="post">
+            <input type="text" name="search" placeholder="Search" class="form-control"> <br>
+            <div class="btns text-center">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h1 class=" text-primary">Babe Bhangra Paunde Ne</h1>
+            <img src="https://i.postimg.cc/mkxQsytD/Screenshot-2.png" alt="" width="300" height="200">
+            <br><br>
+
+            <a href="https://plexmovies.xyz/download-babe-bhangra-paunde-ne-2022-punjabi-movie-camrip/" class="btn  btn-primary ">Babe Bhangra Paunde Ne</a>
+            <a href="/#" class="btn  btn-primary ">download</a>
+
+        </div>
+        <div class="col-lg-4">
+            <h1 class=" text-primary">Raksha Bandhan </h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNY5Wx8z_xn7glJQ2KGBePWU10c4VReHwSsK_8j513kvVpaEZB
+            " alt="" width="250" height="300">
+            <a href="" class="btn  btn-primary ">Raksha Bandhan <br>download
+            </a>
+        </div>
+        <div class="col-lg-4">
+            <h1 class=" text-primary">Hollywood</h1>
+            <a href="/hollywood" class="btn  btn-primary ">Hollywood</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

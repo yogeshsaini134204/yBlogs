@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+<style>
+    body {
+        background-color: aquamarine;
+
+    }
+
+    .container {
+
+        width: 30%;
+        margin: auto;
+    }
+</style>
+
+
+<body>
+    <h3>
+        <div class="container ">
+            <h1 class="text-center">Login </h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                {%csrf_token%}
+                {{login|crispy}} <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="{% url 'signup' %}" class="btn btn-danger">signup</a></td>
+                <a href="{% url 'change_password' %}" class="btn btn-danger">Change Password</a></td>
+            </form>
+        </div>
+    </h3>
+</body>
+
+{% endblock %}

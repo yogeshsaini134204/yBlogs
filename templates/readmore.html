@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    body{
+        background-color: aquamarine;
+    }
+
+
+</style>
+<body>
+    
+
+    <div class="container text-center">
+        <form action="" method="post" enctype="multipart/form-data"> </form>
+        <h1>{{i.title}}</h1>
+        <img src="{{i.image.url}}" width="30%" alt="">
+        <p>{{i.description}}</p>
+        <td><a href="/" class="btn btn-danger">download</a></td>
+    </div>
+</body>
+{% endblock %}
+

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+    body{
+        background-image: url(https://source.unsplash.com/1600x908/?movies);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        backdrop-filter: blur(7px);
+    }
+    .searchbox{
+        margin: auto;
+        width: 30%;
+    }
+
+</style>
+
+<div class="container">
+    <div class="searchbox my-5">
+        <form action="{% url 'search' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="search" placeholder="Search" class="form-control"> <br>
+            <div class="btns text-center">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <h1 class=" text-primary">Black panther</h1>
+            <img src="https://source.unsplash.com/200x200/?panther" alt="">
+            <br><br>
+
+            <a href="/hollywood" class="btn  btn-primary ">black panther</a>
+            <a href="/hollywood" class="btn  btn-primary ">download</a>
+
+        </div>
+        <div class="col-lg-4">
+            <h1 class=" text-primary">Hollywood</h1>
+            <a href="" class="btn  btn-primary ">Hollywood</a>
+        </div>
+        <div class="col-lg-4">
+            <h1 class=" text-primary">Hollywood</h1>
+            <a href="/hollywood" class="btn  btn-primary ">Hollywood</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

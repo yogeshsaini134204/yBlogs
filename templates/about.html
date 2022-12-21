@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+    body {
+        background-image: url("{% static 'about2.jpg'%}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+
+
+    .border{
+        border: 2px dashed black;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 10px 10px 40px black;
+    }
+    .pp{
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+
+<body>
+    <div class="container border my-5">
+
+        <h1 class="text-center my-5">About Us</h1>
+        <p class=" tet-justify pp">The shared storytelling palette known as the Marvel universe was unveiled in 1961,
+            when Goodman responded to the growing interest in superhero books by commissioning writer Stan Lee and artist
+            Jack Kirby to create the Fantastic Four. With the release of Fantastic Four no. 1 (November 1961), readers were
+            introduced to a superheroic setting that was, nevertheless, rooted in the real world. Lee and Kirby attempted to
+            make their comic book characters more original by allowing them to interact with each other in a realistic
+            fashion, including heroes often fighting or arguing with each other. This trend continued with a flood of other
+            superhero characters introduced by Marvel Comics during the early 1960s, including Spider-Man, the Incredible
+            Hulk, and the X-Men. Lee wrote the majority of Marvel’s books during that time, and Jack Kirby and Steve Ditko
+            were the most important and influential artists.
+            
+            Spider-Man
+            Spider-Man
+
+            This more realistic approach to characterizations built up Marvel’s reputation and began to attract
+            university-age readers. Stories also began to deal with social issues such as pollution, race relations, and
+            drug abuse. A Spider-Man story arc from 1971 dealing with drug abuse had to be published without the approval of
+        the Comic Code Authority—the self-regulatory body that had policed comic content since 1954—despite the fact
+        that it was portraying drug use in a negative light. This caused the Comic Code Authority to revise its policy
+        in such matters.
+
+    </p>
+</div>
+</body>
+
+
+
+
+
+
+{% endblock %}
